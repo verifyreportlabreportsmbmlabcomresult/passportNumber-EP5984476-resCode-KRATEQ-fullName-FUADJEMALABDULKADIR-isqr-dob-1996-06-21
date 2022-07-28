@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>WMC COVID-19 Result Verification Portal</title>
+	</head>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+		* {
+			font-family: sans-serif;
+		}
+
+		p1 {
+			font-size: 1em;
+		}
+		.form {
+			display: flex;
+			flex-direction: column;
+			margin: 0em;
+		}
+
+		.cta {
+			background-color: #2196f3;
+			color: white;
+			height: 2.9em;
+			text-align: center;
+			padding: .5em;
+			border-radius: 10px;
+			width: 15em;
+			align-self: center;
+			box-shadow: .1em .1em 5px rgba(0, 0, 0, 0.466);
+			cursor: pointer;
+			text-decoration: none;
+			margin: 1em;
+			padding: auto;
+			border: 0;
+			/* color: rgb(0, 174, 255); */
+		}
+
+		.cta:hover {
+			box-shadow: .2em .2em 10px rgba(0, 0, 0, 0.466);
+		}
+
+		body {
+			background-color: rgb(224, 224, 224);
+		}
+
+		.container {
+			display: flex;
+		}
+
+		input {
+			margin: .7em 0;
+			border: 1px solid Grey;
+			border-radius: 40px;
+			width: 19em;
+			padding: .7em .5em .7em 1.5em;
+		}
+		p{
+			font-size: large;
+			font-weight: 510;
+		}
+		.signincont {
+			background-color: white;
+			width: 20em;
+			height:0em;
+			margin: 0em auto;
+			border-radius: 10px;
+			padding: 1em;
+			box-shadow: 0em 1em 100px rgba(0, 0, 0, 0.74);
+		}
+		.signincontx {
+			background-color: white;
+			width: 26em;
+			/*height: 14em;*/
+			margin: auto auto;
+			border-radius: 10px;
+			padding: 1em;
+			box-shadow: 0em 1em 100px rgba(0, 0, 0, 0.74);
+		}
+	</style>
+
+	<body>
+		<link rel="stylesheet" href="style.css">
+
+		<div class="container">
+			<div class="signincontx" style="margin-top: 1em;">
+				<div class="form" style="margin:0;">
+					<img src="resultHeader.jpg" alt="logo" style="width: 100%;">
+				</div>
+				<br />
+				<div class="form" style="margin:0;">
+					<table style="width:100%;">
+						<tr>
+							<td style="padding: 0 0 0.8em 0;text-align:left;width:130px;">Unique Ref.:</td>
+							<td style="padding: 0 0 0.8em 6px;text-align:left;font-weight:bold;" colspan="2">KRATEQ</td>
+						</tr>
+						<tr>
+							<td style="padding: 0 0 0.8em 0;text-align:left;">Full name:</td>
+							<td style="padding: 0 0 0.8em 6px;text-align:left;font-weight:bold;" colspan="2">FUAD JEMAL ABDULKADIR</td>
+						</tr>
+						<tr>
+							<td style="padding: 0 0 0.8em 0;text-align:left;">Citizenship:</td>
+							<td style="padding: 0 0 0.8em 6px;text-align:left;font-weight:bold;" colspan="2">ETHIOPIA</td>
+						</tr>
+						<tr>
+							<td style="padding: 0 0 0.8em 0;text-align:left;">Passport #:</td>
+							<td style="padding: 0 0 0.8em 6px;text-align:left;font-weight:bold;" colspan="2">EP5984476</td>
+						</tr>
+						<tr>
+							<td style="padding: 0 0 0.8em 0;text-align:left;">DOB:</td>
+							<td style="padding: 0 0 0.8em 6px;text-align:left;font-weight:bold;" colspan="2">21-JUN-1996</td>
+						</tr>
+						<tr>
+							<td style="padding: 0 0 0.8em 0;text-align:left;">Sample collection date and time:</td>
+							<td style="padding: 0 0 0.8em 6px;text-align:left;font-weight:bold;" colspan="2">27-JUL-2022 08:35 (GMT+3)</td>
+						</tr>
+						<tr>
+							<td style="padding: 0 0 0.8em 0;text-align:left;" rowspan="3">Test result:</td>
+							<td style="padding: 0 6px 0.8em 6px;text-align:left;font-weight:bold;">
+								PCR:
+							</td>
+							<td style="padding: 0 0 0.8em 0;text-align:left;font-weight:bold;">
+								NEGATIVE
+							</td>
+						</tr>
+						<tr>
+							<td style="padding: 0 6px 0.8em 6px;text-align:left;font-weight:bold;">
+								IgM:
+							</td>
+							<td style="padding: 0 0 0.8em 0;text-align:left;font-weight:bold;">
+								N/A
+							</td>
+						</tr>
+						<tr>
+							<td style="padding: 0 6px 0.8em 6px;text-align:left;font-weight:bold;width:5em;">
+								Antigen:
+							</td>
+							<td style="padding: 0 0 0.8em 0;text-align:left;font-weight:bold;">
+								N/A
+							</td>
+						</tr>
+						<tr>
+							<td style="padding: 1em 6px 1em 6px;font-weight:bold;width:5em;font-size:1.25em;text-align: center;color:green;border:5px solid green;" colspan="3">
+								BOARD WITH THIS TEST RESULT IF TEST RESULT IS VALID AS PER DESTINATION RULES &amp; REGULATIONS
+							</td>
+						</tr>		<tr>
+								<td style="padding: 1em 6px 1em 6px;text-align: center;color:red;" colspan="3">
+									<a href="#" id="myImg" style="font-size:1.25em;color:red;text-decoration:none;">SHOW FULL CERTIFICATE</a>
+								</td>
+							</tr>
+					</table>
+				</div>
+				<br />
+				<div class="form" style="margin:0;">
+					<form action="" method="get">
+						<input type="submit" href="#" value="Back" class="cta" >
+					</form>
+				</div>
+			</div>
+		</div>
+		<style>
+			#myImg {
+			  border-radius: 5px;
+			  cursor: pointer;
+			  transition: 0.3s;
+			}
+
+			#myImg:hover {opacity: 0.7;}
+
+			/* The Modal (background) */
+			.modal {
+			  display: none; /* Hidden by default */
+			  position: fixed; /* Stay in place */
+			  z-index: 1000; /* Sit on top */
+			  padding-top: 10px; /* Location of the box */
+			  left: 0;
+			  top: 0;
+			  width: 100%; /* Full width */
+			  height: 100%; /* Full height */
+			  overflow: auto; /* Enable scroll if needed */
+			  background-color: rgb(0,0,0); /* Fallback color */
+			  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+			}
+
+			/* Modal Content (Image) */
+			.modal-content {
+			  margin: auto;
+			  display: block;
+			  /*width: 80%;
+			  max-width: 700px;*/
+			}
+
+			/* Caption of Modal Image (Image Text) - Same Width as the Image */
+			#caption {
+			  margin: auto;
+			  display: block;
+			  width: 80%;
+			  /*max-width: 700px;*/
+			  text-align: center;
+			  color: #ccc;
+			  padding: 10px 0;
+			  height: 50px;
+			}
+
+			/* Add Animation - Zoom in the Modal */
+			.modal-content, #caption {
+			  animation-name: zoom;
+			  animation-duration: 0.6s;
+			}
+
+			@keyframes zoom {
+			  from {transform:scale(0)}
+			  to {transform:scale(1)}
+			}
+
+			/* The Close Button */
+			.close {
+			  position: absolute;
+			  top: 15px;
+			  right: 35px;
+			  color: #f1f1f1;
+			  font-size: 40px;
+			  font-weight: bold;
+			  transition: 0.3s;
+			}
+
+			.close:hover,
+			.close:focus {
+			  color: #bbb;
+			  text-decoration: none;
+			  cursor: pointer;
+			}
+
+			/* 100% Image Width on Smaller Screens */
+			@media only screen and (max-width: 700px){
+			  .modal-content {
+				width: 100%;
+			  }
+			}
+   </style>
+
+
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+		  <!-- The Close Button -->
+		  <span class="close">&times;</span>
+
+		  <!-- Modal Content (The Image) -->
+		  <img class="modal-content" src="">
+
+		  <!-- Modal Caption (Image Text) -->
+		  <div id="caption"></div>
+		</div>
+		<script>
+			var modal = document.getElementById("myModal");
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById("myImg");
+			
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+			  modal.style.display = "block";
+			  captionText.innerHTML = "FULL CERTIFICATE";
+			}
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			  modal.style.display = "none";
+			}
+		</script>
+	</body>
+</html>
